@@ -10,7 +10,13 @@ const webpackBaseConfig = {
   output: {
     path: resolve(process.cwd(), 'dist'),
     filename: '[name].[contenthash].js',
-    clean: true
+    clean: true,
+    publicPath: '/'
+  },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
   },
   // 模块配置
   module: {
@@ -49,7 +55,6 @@ const webpackBaseConfig = {
   },
   // cache: {
   //   type: 'filesystem'
-
   // }
   plugins: [
     new HtmlWebpackPlugin({
