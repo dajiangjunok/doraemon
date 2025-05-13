@@ -2,7 +2,7 @@ import { memo } from 'react'
 
 const Doraemon = () => {
   return (
-    <div className="absolute left-[100px] top-[100px] border-2 border-black w-lg h-[700px] flex justify-center">
+    <div className="absolute left-[100px] top-[100px] w-lg h-[700px] flex justify-center">
       {/* header
        * rounded-ee-full
        * rounded-es-full
@@ -55,7 +55,7 @@ const Doraemon = () => {
           >
             <div className="absolute bottom-[10px] right-[2px] w-[16px] h-[16px] bg-black rounded-full"></div>
           </div>
-          <div 
+          <div
             className="right-eye z-2
           left-eye  
             absolute
@@ -89,13 +89,96 @@ const Doraemon = () => {
             ></div>
           </div>
           {/* face line */}
-          <div className="absolute border-6  border-transparent z-1
-       border-r-black  w-[400px] h-[400px] rounded-full rotate-[16deg] top-[-50px] left-[-214px]"></div>
+          <div
+            className="absolute border-6  border-transparent z-1
+       border-r-black  w-[400px] h-[400px] rounded-full rotate-[16deg] top-[-50px] left-[-214px]"
+          ></div>
           {/* mouth */}
           <div className="absolute border-6 border-transparent border-r-black z-1 w-[210px] h-[238px] rounded-full top-[-40px] left-[36px] rotate-[64deg]"></div>
           <div className="absolute w-[70px] h-[30px] bg-white z-2 left-[150px] top-[176px] rotate-[-22deg]"></div>
+          {/* beard */}
+          <div
+            className="
+          absolute 
+          z-10
+          top-[15px] 
+          left-[-22px] 
+          w-[150px] 
+          h-[150px] 
+          border-[6px]
+          border-transparent
+          border-l-black
+          rounded-tl-full
+          rotate-[86deg]
+           "
+          ></div>
+          <div
+            className="absolute
+        top-[69px]
+        left-[-36px]
+        h-[6px]
+        w-[100px]
+        bg-black
+        rotate-[20deg]
+      "
+          ></div>
+          <div
+            className="
+          absolute 
+          z-10
+          top-[90px] 
+          left-[-17px] 
+          w-[110px] 
+          h-[110px] 
+          border-[6px]
+          border-transparent
+          border-l-black
+          rounded-tl-full
+          rotate-[61deg]
+           "
+          ></div>
         </div>
       </div>
+      <div
+        className="
+          absolute 
+          z-10
+          top-[-12px] 
+          right-[-36px] 
+          w-[180px] 
+          h-[180px] 
+          border-[6px]
+          border-transparent
+          border-l-black
+          rounded-tl-full
+          rotate-[18deg]
+           "
+      ></div>
+      <div
+        className="
+          absolute 
+          z-10
+          top-[49px] 
+          right-[-45px] 
+          w-[150px] 
+          h-[150px] 
+          border-[6px]
+          border-transparent
+          border-l-black
+          rounded-tl-full
+          rotate-[36deg]
+           "
+      ></div>
+      <div
+        className="absolute
+        top-[144px]
+        right-[22px]
+        h-[6px]
+        w-[100px]
+        bg-black
+        rotate-[-9deg]
+      "
+      ></div>
     </div>
   )
 }
